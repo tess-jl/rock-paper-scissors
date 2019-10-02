@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <header>
+        Welcome to the game! Here are the rules 
+        <ul>
+            <li> Both players reveal at same time</li>
+            <li>Rock beats scissors</li>
+            <li>Paper beats rock</li>
+            <li>Scissors beats paper</li>
+        </ul>
+
+    <section class="tools"></section>
+        <label>
+            Rock
+            <input name="rock" value="rockWOW" type="radio"/>
+            <img class="tool-image" src= "https://vignette.wikia.nocookie.net/yandere-simulator-fanon/images/4/4e/Johnson.jpg/revision/latest?cb=20160625153352">
+        </label>
+        <label>
+            Paper
+                <input name="paper" value="paperOOO" type="radio">
+                <img class="tool-image" src= "https://neal.fun/paper/minified/paper.jpg">
+        </label>
+        <label>
+                Scissors
+                    <input name="scissors" value="scissorsSSS" type="radio">
+                    <img class="tool-image" src= "https://www.ikea.com/PIAimages/0598116_PE677469_S5.JPG?f=xxxl">
+            </label>
+    <section>
+    </header>
+
+    <button id="my-button">play game!</button>
+
+    <section>
+            <div class="hidden" id="summary"> game result is: <span id="result"></span></div>
+    
+            <div>What I threw: <span id="i-threw"></span></div>
+            <div>What computer threw: <span id="com-threw"></span></div>
+    </section>
+
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

@@ -23,7 +23,7 @@
     <section class="tools"></section>
         <label>
             Rock
-            <input name="rock" value="rockWOW" type="radio"/>
+            <input name="rock" value="rockWOW" type="radio" checked/>
             <img class="tool-image" src= "https://vignette.wikia.nocookie.net/yandere-simulator-fanon/images/4/4e/Johnson.jpg/revision/latest?cb=20160625153352">
         </label>
         <label>
@@ -39,14 +39,18 @@
     <section>
     </header>
 
+    <p id="message"> 
+        play either rock, paper, or scissors
+    </p>
+
     <button id="play-button">play game!</button>
 
     <section>
-            <div class="hidden" id="throw-result"> game result is: <span id="result"></span></div>
-    
             <div>Number of draws: <span id="draws"></span></div>
             <div>Number of game wins: <span id="game-wins"></span></div>
             <div>Number of player wins: <span id="player-wins"></span></div>
+
+            <div class="hidden" id="throw-result"> game result is: <span id="result"></span></div>
     </section>
 
 

@@ -2,7 +2,7 @@
 
 const getRandomThrow = () => {
     
-    const randomNumber = Math.floor(math.random() * 3) + 1;
+    const randomNumber = Math.floor(Math.random() * 3) + 1;
 
     if (randomNumber === 1) {
         return 'rock';
@@ -12,3 +12,5 @@ const getRandomThrow = () => {
         return 'scissors';
     } 
 };
+
+export default getRandomThrow;

@@ -8,12 +8,6 @@
     align-items: center;
 }
 
-.tool-image {
-    border: 5px solid transparent;
-    border-radius: 0%
-    width: 50px;
-}
-
 input:checked + .tool-image {
     border: 5px solid lightblue;
 }
@@ -22,12 +16,18 @@ input:checked + .tool-image {
     display: none;
 }
 
-/* body {
-    background-color: rgb(180, 218, 216);
+body {
+    background-color: rgb(200, 218, 180);
     display: flex;
     height: 100vh;
     justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    align: center;
+}
+/* .list {
     text-align: left;
 } */
-
-

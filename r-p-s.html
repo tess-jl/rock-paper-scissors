@@ -10,52 +10,52 @@
 </head>
 
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <header>
-        Welcome to the game! Here are the rules 
-        <ul>
-            <li>Rock wins over scissors</li>
-            <li>Paper wins over rock</li>
-            <li>Scissors wins over paper</li>
-        </ul>
+    <main>
+        <h1>Rock Paper Scissors</h1>
+        <header>
+            Welcome to the game! Here are the rules 
+            <ul>
+                <li class="list">Rock wins over scissors</li>
+                <li class="list">Paper wins over rock</li>
+                <li class="list">Scissors wins over paper</li>
+            </ul>
 
-    <p id="message"> 
-        click on either rock, paper, or scissors to play against the computer
-     </p>
+        <p id="message"> 
+            click on either rock, paper, or scissors to play against the computer
+        </p>
         
 
-    <section class="tools"></section>
-        <label>
-            <input name="tool" value="rock" type="radio" checked/>
-            <img class="tool-image" src= "https://vignette.wikia.nocookie.net/yandere-simulator-fanon/images/4/4e/Johnson.jpg/revision/latest?cb=20160625153352">
-        </label>
-        <label>
-            <input name="tool" value="paper" type="radio">
-            <img class="tool-image" src= "https://neal.fun/paper/minified/paper.jpg">
-        </label>
-        <label>
-            <input name="tool" value="scissors" type="radio">
-            <img class="tool-image" src= "https://www.ikea.com/PIAimages/0598116_PE677469_S5.JPG?f=xxxl">
-        </label>
-    <section>
-    </header>
+        <section class="tools"></section>
+            <label>
+                <input name="tool" value="rock" type="radio" checked/>
+                <img class="tool-image" src= "https://vignette.wikia.nocookie.net/yandere-simulator-fanon/images/4/4e/Johnson.jpg/revision/latest?cb=20160625153352">
+            </label>
+            <label>
+                <input name="tool" value="paper" type="radio">
+                <img class="tool-image" src= "https://neal.fun/paper/minified/paper.jpg">
+            </label>
+            <label>
+                <input name="tool" value="scissors" type="radio">
+                <img class="tool-image" src= "https://www.ikea.com/PIAimages/0598116_PE677469_S5.JPG?f=xxxl">
+            </label>
+        <section>
+        </header>
 
-    <button id="play-button">play game!</button>
+        <button id="play-button">play game!</button>
 
-    <section>
-        </br>
-            <div>The player threw: <span id="player-throw"></span></div>
-            <div>The game threw: <span id="game-throw"></span></div>
+        <section>
+            </br>
+                <div>The player threw: <span id="player-throw"></span></div>
+                <div>The game threw: <span id="game-throw"></span></div>
 
-            <div>Number of draws: <span id="draws"></span></div>
-            <div>Number of game wins: <span id="game-wins"></span></div>
-            <div>Number of player wins: <span id="player-wins"></span></div>
-        </br>
-            <div class="hidden" id="throw-result"><span id="result"></span></div>
-    </section>
-
-
-    <script type="module" src="r-p-s.js"></script>
+                <div>Number of draws: <span id="draws"></span></div>
+                <div>Number of game wins: <span id="game-wins"></span></div>
+                <div>Number of player wins: <span id="player-wins"></span></div>
+            </br>
+                <div class="hidden" id="throw-result"><span id="result"></span></div>
+        </section>
+        <script type="module" src="r-p-s.js"></script>
+    </main>
 </body>
 
 </html>

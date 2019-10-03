@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissors Game</title>
 </head>
 
 <body>
@@ -14,30 +14,26 @@
     <header>
         Welcome to the game! Here are the rules 
         <ul>
-            <li> Both players reveal at same time</li>
-            <li>Rock beats scissors</li>
-            <li>Paper beats rock</li>
-            <li>Scissors beats paper</li>
+            <li>Rock wins over scissors</li>
+            <li>Paper wins over rock</li>
+            <li>Scissors wins over paper</li>
         </ul>
 
     <p id="message"> 
-        play either rock, paper, or scissors
+        click on either rock, paper, or scissors to play against the computer
      </p>
         
 
     <section class="tools"></section>
         <label>
-            Rock
             <input name="tool" value="rock" type="radio" checked/>
             <img class="tool-image" src= "https://vignette.wikia.nocookie.net/yandere-simulator-fanon/images/4/4e/Johnson.jpg/revision/latest?cb=20160625153352">
         </label>
         <label>
-            Paper
             <input name="tool" value="paper" type="radio">
             <img class="tool-image" src= "https://neal.fun/paper/minified/paper.jpg">
         </label>
         <label>
-            Scissors
             <input name="tool" value="scissors" type="radio">
             <img class="tool-image" src= "https://www.ikea.com/PIAimages/0598116_PE677469_S5.JPG?f=xxxl">
         </label>
@@ -45,13 +41,16 @@
     </header>
 
     <button id="play-button">play game!</button>
-    
-</br>
+
     <section>
+        </br>
+            <div>The player threw: <span id="player-throw"></span></div>
+            <div>The game threw: <span id="game-throw"></span></div>
+
             <div>Number of draws: <span id="draws"></span></div>
             <div>Number of game wins: <span id="game-wins"></span></div>
             <div>Number of player wins: <span id="player-wins"></span></div>
-
+        </br>
             <div class="hidden" id="throw-result"><span id="result"></span></div>
     </section>
 

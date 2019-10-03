@@ -6,6 +6,9 @@ import getRandomThrow from './get-random-throw.js';
 const playButton = document.getElementById('play-button'); // button user presses
 const throwResult = document.getElementById('throw-result'); // message to update user about changed state
 // DOM elements for tracking results for user
+const playerThrow = document.getElementById('player-throw');
+const gameThrow = document.getElementById('game-throw');
+
 const numberOfDraws = document.getElementById('draws');
 const numberOfGameWins = document.getElementById('game-wins');
 const numberOfPlayerWins = document.getElementById('player-wins');
@@ -25,21 +28,26 @@ playButton.addEventListener('click', () => {
     const randomGameThrow = getRandomThrow();
     const playerGameThrow = document.querySelector('input:checked').value;
 
+    playerThrow.textContent = playerGameThrow;
+    gameThrow.textContent = randomGameThrow;
+
     const result = checkResult(playerGameThrow, randomGameThrow);
     console.log(randomGameThrow, 'random game throw');
     console.log(playerGameThrow, 'player game throw');
 
+
+
     if (result === 'draw') {
         throwResult.textContent = 'it was a draw!';
-        numberOfDraws.textContent = draw + 1;
         draw = draw + 1;
+        numberOfDraws.textContent = draw;
     } else if (result === 'game wins') {
         throwResult.textContent = 'you lost!';
-        numberOfGameWins.textContent = gameWins + 1;
         gameWins = gameWins + 1;
+        numberOfGameWins.textContent = gameWins;
     } else if (result === 'player wins') {
         throwResult.textContent = 'you won!';
-        numberOfPlayerWins.textContent = playerWins + 1;
         playerWins = playerWins + 1;
+        numberOfPlayerWins.textContent = playerWins;
     }
 });

@@ -23,3 +23,5 @@ const checkResult = (player, game) => {
         return 'player wins';
     }
 };
+
+export default checkResult; 

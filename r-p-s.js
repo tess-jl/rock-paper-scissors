@@ -3,11 +3,8 @@ import checkResult from './check-result.js';
 import getRandomThrow from './get-random-throw.js';
 
 // reference the DOM elements
-//const radioButtons = document.querySelector('input:checked');
-
-const playButton = document.getElementById('play-button');
+const playButton = document.getElementById('play-button'); // button user presses
 const throwResult = document.getElementById('throw-result'); // message to update user about changed state
-
 // DOM elements for tracking results for user
 const numberOfDraws = document.getElementById('draws');
 const numberOfGameWins = document.getElementById('game-wins');
@@ -15,21 +12,17 @@ const numberOfPlayerWins = document.getElementById('player-wins');
 
 
 // set up application state (will change over time)
-const randomGameThrow = getRandomThrow(); // returns strings rock, paper, scissors 
-console.log(randomGameThrow, 'game throw');
-
-
 let draw = 0;
 let gameWins = 0;
 let playerWins = 0;
 
 numberOfDraws.textContent = draw;
-numberOfGameWins.textContent= gameWins;
-numberOfPlayerWins.textContent= playerWins;
+numberOfGameWins.textContent = gameWins;
+numberOfPlayerWins.textContent = playerWins;
 
 // Event-handler function 
 playButton.addEventListener('click', () => {
-
+    const randomGameThrow = getRandomThrow();
     const playerGameThrow = document.querySelector('input:checked').value;
 
     const result = checkResult(playerGameThrow, randomGameThrow);
@@ -49,6 +42,4 @@ playButton.addEventListener('click', () => {
         numberOfPlayerWins.textContent = playerWins + 1;
         playerWins = playerWins + 1;
     }
-
-
 });

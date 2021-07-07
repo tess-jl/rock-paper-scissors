@@ -1,0 +1,45 @@
+.tool-image {
+    border: 5px solid transparent;
+    border-radius: 0%;
+    height: 100px;
+}
+
+.tools {
+    align-items: center;
+}
+
+input:checked + .tool-image {
+    border: 5px solid lightblue;
+}
+
+[type=radio] {
+    display: none;
+}
+
+body {
+    background-color: rgb(200, 218, 180);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#play-button {
+    transition-duration: 0.5s;
+    background: white;
+    color: darkgreen;
+    font-size: 2rem;
+    padding: 0.3rem; 
+    box-shadow: 1px 1px 1px gray; 
+    outline: none; 
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 0.5em; 
+}
+
+#play-button:hover {
+    outline: red; 
+    background: lightblue; 
+}
